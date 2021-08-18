@@ -38,7 +38,7 @@ router.post("/", verify, async (req, res) => {
   router.get("/", verify, async (req, res) => {
     const typeQuery = req.query.type;
     const genreQuery = req.query.genre;
-    let list = [];
+    let list = []; 
     try {
       if (typeQuery) {
         if (genreQuery) {
